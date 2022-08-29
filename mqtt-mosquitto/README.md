@@ -26,7 +26,7 @@
 
     `$ chmod a+x /mnt/data/on_boot.d/45-mosquitto.sh`
 
-3. Also edit [`cni/45-mosquitto.conflist`](cni/45-mosquitto.conflist) according your configuration and copy to `/mnt/data/podman/cni/`.
+3. Also edit [`cni/45-mqtt.conflist`](cni/45-mqtt.conflist) according your configuration and copy to `/mnt/data/podman/cni/`.
 
 4. Run boot script (to create update network and create CNI configuration for container)
 
