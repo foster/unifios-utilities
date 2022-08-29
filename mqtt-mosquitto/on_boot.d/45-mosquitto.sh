@@ -40,7 +40,7 @@ ip route add ${IPV4_IP_CONTAINER}/32 dev br${VLAN_ID}.mac
 # create basic config if not exist
 if ! test -f /mnt/data/mosquitto/config/mosquitto.conf; then
   mkdir -p /mnt/data/mosquitto/data /mnt/data/mosquitto/config
-  cat > /mnt/data/mosquitto/mosquitto.conf<< EOF
+  cat > /mnt/data/mosquitto/config/mosquitto.conf<< EOF
 listener 1883
 allow_anonymous true
 
